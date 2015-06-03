@@ -60,7 +60,7 @@
 		04266F2A1B1F0ED300AF5633 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		04266F2C1B1F0EDF00AF5633 /* AppCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppCell.h; sourceTree = "<group>"; };
 		04266F2D1B1F0EDF00AF5633 /* AppCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppCell.m; sourceTree = "<group>"; };
-		04266F311B1F5D8D00AF5633 /* pchFile.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pchFile.pch; sourceTree = "<group>"; };
+		04266F321B1F631C00AF5633 /* pchFile.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pchFile.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,7 +122,7 @@
 		04266ED91B1E849100AF5633 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				04266F311B1F5D8D00AF5633 /* pchFile.pch */,
+				04266F321B1F631C00AF5633 /* pchFile.pch */,
 				04266F051B1E9B5E00AF5633 /* apps.plist */,
 				04266EDA1B1E849100AF5633 /* Info.plist */,
 				04266EDB1B1E849100AF5633 /* main.m */,
