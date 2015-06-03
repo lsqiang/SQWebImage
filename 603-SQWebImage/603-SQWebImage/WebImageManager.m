@@ -57,6 +57,8 @@
 
 - (void)webImageOperationWithURL:(NSString *)url finishedBlock:(void(^)(UIImage *img)) finishedBlock {
     
+    WS(weakSelf);
+    
     //操作重复判断
     if (self.opCache[url] != nil) {
         NSLog(@"重复操作，请等待。。。");
@@ -72,7 +74,7 @@
     //下载操作(下载结束从缓冲池中移除)
     WebImageOperation *downloadOp = [WebImageOperation webImageOperationWithURL:url finishedBlock:^(UIImage *img) {
         finishedBlock(img);
-        [self.opCache removeObjectForKey:url];
+        [weakSelf.opCache removeObjectForKey:url];
     }];
     
     //执行下载

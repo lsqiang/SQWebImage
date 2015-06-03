@@ -60,6 +60,7 @@
 		04266F2A1B1F0ED300AF5633 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		04266F2C1B1F0EDF00AF5633 /* AppCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppCell.h; sourceTree = "<group>"; };
 		04266F2D1B1F0EDF00AF5633 /* AppCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppCell.m; sourceTree = "<group>"; };
+		04266F311B1F5D8D00AF5633 /* pchFile.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pchFile.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +122,7 @@
 		04266ED91B1E849100AF5633 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				04266F311B1F5D8D00AF5633 /* pchFile.pch */,
 				04266F051B1E9B5E00AF5633 /* apps.plist */,
 				04266EDA1B1E849100AF5633 /* Info.plist */,
 				04266EDB1B1E849100AF5633 /* main.m */,
@@ -387,6 +389,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "${SRCROOT}/603-SQWebImage/pchFile.pch";
 				INFOPLIST_FILE = "603-SQWebImage/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -397,6 +400,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "${SRCROOT}/603-SQWebImage/pchFile.pch";
 				INFOPLIST_FILE = "603-SQWebImage/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -456,6 +460,7 @@
 				04266EFB1B1E849100AF5633 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04266EFC1B1E849100AF5633 /* Build configuration list for PBXNativeTarget "603-SQWebImageTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +469,7 @@
 				04266EFE1B1E849100AF5633 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

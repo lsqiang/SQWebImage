@@ -31,6 +31,8 @@
 //执行的时候会调用main方法
 - (void)main {
     
+    WS(weakSelf);
+    
     if (self.isCancelled) return;
     NSAssert(self.finishedBlock != nil, @"没有传递block值");
     
@@ -43,7 +45,7 @@
     [imgData writeToFile:self.url.appendDocumentPath atomically:YES];
     
     [[NSOperationQueue mainQueue] addOperationWithBlock:^{
-        self.finishedBlock(img);
+        weakSelf.finishedBlock(img);
     }];
     
 }

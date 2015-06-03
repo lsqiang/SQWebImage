@@ -18,7 +18,9 @@
 @implementation WebImageView
 
 - (void)setWebImage:(NSString *)url {
-
+    
+    WS(weakSelf);
+    
     //一个还没下载完，就开始下载另外一个
     if (![url isEqualToString:self.currentURL]) {
         [[WebImageManager shareWebImage] cancelWebImageOpWithURL:self.currentURL];
@@ -26,7 +28,7 @@
     self.currentURL = url;
     
     [[WebImageManager shareWebImage] webImageOperationWithURL:url finishedBlock:^(UIImage *img) {
-        self.image = img;
+        weakSelf.image = img;
     }];
 }
 
