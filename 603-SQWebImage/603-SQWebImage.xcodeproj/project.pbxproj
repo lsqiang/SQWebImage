@@ -18,9 +18,9 @@
 		04266F0C1B1EA36E00AF5633 /* NSString+path.m in Sources */ = {isa = PBXBuildFile; fileRef = 04266F0A1B1EA36E00AF5633 /* NSString+path.m */; };
 		04266F0F1B1EF05900AF5633 /* WebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04266F0E1B1EF05900AF5633 /* WebImageManager.m */; };
 		04266F171B1F03D500AF5633 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04266F161B1F03D500AF5633 /* ViewController.m */; };
-		04266F1A1B1F069A00AF5633 /* WebImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04266F191B1F069A00AF5633 /* WebImageView.m */; };
 		04266F2B1B1F0ED300AF5633 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04266F2A1B1F0ED300AF5633 /* Main.storyboard */; };
 		04266F2E1B1F0EDF00AF5633 /* AppCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04266F2D1B1F0EDF00AF5633 /* AppCell.m */; };
+		048C1DDA1B20620D005BBAFF /* UIImageView+WebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 048C1DD91B20620D005BBAFF /* UIImageView+WebImage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,12 +55,12 @@
 		04266F0D1B1EF05900AF5633 /* WebImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebImageManager.h; sourceTree = "<group>"; };
 		04266F0E1B1EF05900AF5633 /* WebImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebImageManager.m; sourceTree = "<group>"; };
 		04266F161B1F03D500AF5633 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		04266F181B1F069A00AF5633 /* WebImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebImageView.h; sourceTree = "<group>"; };
-		04266F191B1F069A00AF5633 /* WebImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebImageView.m; sourceTree = "<group>"; };
 		04266F2A1B1F0ED300AF5633 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		04266F2C1B1F0EDF00AF5633 /* AppCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppCell.h; sourceTree = "<group>"; };
 		04266F2D1B1F0EDF00AF5633 /* AppCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppCell.m; sourceTree = "<group>"; };
 		04266F321B1F631C00AF5633 /* pchFile.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pchFile.pch; sourceTree = "<group>"; };
+		048C1DD81B20620D005BBAFF /* UIImageView+WebImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+WebImage.h"; sourceTree = "<group>"; };
+		048C1DD91B20620D005BBAFF /* UIImageView+WebImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebImage.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,14 +150,14 @@
 		04266F1B1B1F08E600AF5633 /* SQWebImage */ = {
 			isa = PBXGroup;
 			children = (
-				04266F181B1F069A00AF5633 /* WebImageView.h */,
-				04266F191B1F069A00AF5633 /* WebImageView.m */,
 				04266F091B1EA36E00AF5633 /* NSString+path.h */,
 				04266F0A1B1EA36E00AF5633 /* NSString+path.m */,
 				04266F0D1B1EF05900AF5633 /* WebImageManager.h */,
 				04266F0E1B1EF05900AF5633 /* WebImageManager.m */,
 				04266F021B1E854E00AF5633 /* WebImageOperation.h */,
 				04266F031B1E854E00AF5633 /* WebImageOperation.m */,
+				048C1DD81B20620D005BBAFF /* UIImageView+WebImage.h */,
+				048C1DD91B20620D005BBAFF /* UIImageView+WebImage.m */,
 			);
 			name = SQWebImage;
 			sourceTree = "<group>";
@@ -266,8 +266,8 @@
 				04266F2E1B1F0EDF00AF5633 /* AppCell.m in Sources */,
 				04266F0B1B1EA36E00AF5633 /* AppInfo.m in Sources */,
 				04266F171B1F03D500AF5633 /* ViewController.m in Sources */,
+				048C1DDA1B20620D005BBAFF /* UIImageView+WebImage.m in Sources */,
 				04266F041B1E854E00AF5633 /* WebImageOperation.m in Sources */,
-				04266F1A1B1F069A00AF5633 /* WebImageView.m in Sources */,
 				04266F0F1B1EF05900AF5633 /* WebImageManager.m in Sources */,
 				04266EDF1B1E849100AF5633 /* AppDelegate.m in Sources */,
 				04266F0C1B1EA36E00AF5633 /* NSString+path.m in Sources */,

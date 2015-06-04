@@ -14,15 +14,16 @@
 
 @property (strong, nonatomic) NSOperationQueue *downloadQueue;
 @property (strong, nonatomic) NSMutableDictionary *opCache;//操作缓存
-@property (strong, nonatomic) NSMutableDictionary *imgCache;//图片缓存
+@property (strong, nonatomic) NSCache *imgCache;//图片缓存
 
 @end
 
 @implementation WebImageManager
 
-- (NSMutableDictionary *)imgCache {
+- (NSCache *)imgCache {
     if (_imgCache == nil) {
-        _imgCache = [[NSMutableDictionary alloc] init];
+        _imgCache = [[NSCache alloc] init];
+        _imgCache.countLimit = 20;
     }
     return _imgCache;
 }
@@ -67,7 +68,7 @@
     
     //图片缓存
     if ([self checkChche:url]) {
-        finishedBlock(self.imgCache[url]);
+        finishedBlock([self.imgCache objectForKey:url]);
         return;
     }
     
@@ -88,7 +89,7 @@
 - (BOOL)checkChche:(NSString *)url {
     
     //图片缓存
-    if (self.imgCache[url] != nil) {
+    if ([self.imgCache objectForKey:url] != nil) {
         NSLog(@"从缓存中加载");
         return YES;
     }

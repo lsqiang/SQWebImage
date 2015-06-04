@@ -10,15 +10,12 @@
 #import "WebImageOperation.h"
 #import "AppInfo.h"
 #import "WebImageManager.h"
-#import "WebImageView.h"
 #import "AppCell.h"
+#import "UIImageView+WebImage.h"
 
 @interface ViewController ()
 
 @property (strong, nonatomic) NSArray *appList;
-
-@property (weak, nonatomic) IBOutlet WebImageView *imgView;
-
 
 @end
 
@@ -51,7 +48,6 @@
     cell.nameLabel.text = app.name;
     cell.downloadLabel.text = app.download;
     [cell.iconView setWebImage:app.icon];
-    
     return cell;
 }
 

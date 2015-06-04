@@ -1,14 +1,14 @@
 //
-//  WebImageView.h
+//  UIImageView+WebImage.h
 //  603-SQWebImage
 //
-//  Created by Fly on 15/6/3.
+//  Created by Fly on 15/6/4.
 //  Copyright (c) 2015年 itheima. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface WebImageView : UIImageView
+@interface UIImageView (WebImage)
 
 - (void)setWebImage:(NSString *)url;
 
