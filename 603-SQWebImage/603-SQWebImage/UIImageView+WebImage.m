@@ -22,7 +22,7 @@
     
     WS(weakSelf);
     
-    //取消之前下载操作
+    //取消之前下载操作 
     if (![url isEqualToString:self.currentURL]) {
         [[WebImageManager shareWebImage] cancelWebImageOpWithURL:self.currentURL];
         
